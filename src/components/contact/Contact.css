@@ -72,6 +72,9 @@
   width: 20px;
   margin-left: 10px;
 }
+.labelName{
+  color: #ebecfe;
+}
 @media (max-width: 700px) {
   .contact {
     display: block;

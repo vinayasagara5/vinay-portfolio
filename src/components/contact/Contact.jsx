@@ -63,21 +63,21 @@ const Contact = () => {
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
-          <label>Your name</label>
+          <label className="labelName">Your name</label>
           <input
             type="text"
             name="name"
             placeholder="Enter your name"
             required
           />
-          <label>Phone Number</label>
+          <label className="labelName">Phone Number</label>
           <input
             type="tel"
             name="phone"
             placeholder="Enter your mobile
      number required"
           />
-          <label>Write your messages here</label>
+          <label className="labelName">Write your messages here</label>
           <textarea
             name="message"
             rows="6"
@@ -88,7 +88,7 @@ const Contact = () => {
             Submit now <img src={white_arrow} alt="" />
           </button>
         </form>
-        <span>{result}</span>
+        <span className="labelName">{result}</span>
       </div>
     </div>
   );

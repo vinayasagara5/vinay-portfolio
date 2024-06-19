@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./PortPolfolio.css";
 import { Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -209,7 +208,7 @@ const PortPolfolio = () => {
                             May 2023 — Present
                           </header>
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a href="https://www.wego.co.in/" target="_blank">
                               <span>Associate Staff Engineer @ Nagarro</span>
@@ -257,7 +256,7 @@ const PortPolfolio = () => {
                             May 2022 — May 2023
                           </header>
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a href="https://www.wego.co.in/" target="_blank">
                               <span>SDE-II @ Get My Parking·</span>
@@ -309,7 +308,7 @@ const PortPolfolio = () => {
                             Oct 2018 — Mar 2022
                           </header>
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a href="https://www.wego.co.in/" target="_blank">
                               <span>Engineer @ L&T Technology Services</span>
@@ -343,7 +342,6 @@ const PortPolfolio = () => {
                 </ol>
               </div>
             </section>
-
             <section id="projects" className={"experienceSection section"}>
               <div className="heading-xs">Projects</div>
               <div>
@@ -354,12 +352,10 @@ const PortPolfolio = () => {
                         <Col xs={12} md={3}>
                           <img
                             src={Academia}
-                            width="100%"
-                            height="auto"
                             className="exp-card-icon"
                           />
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a
                               href="https://willowy-wisp-bb5c20.netlify.app/"
@@ -407,7 +403,7 @@ const PortPolfolio = () => {
                             className="exp-card-icon"
                           />
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a
                               href="https://jovial-dragon-9363b9.netlify.app/"
@@ -456,7 +452,7 @@ const PortPolfolio = () => {
                             className="exp-card-icon"
                           />
                         </Col>
-                        <Col xs={9} md={9} sm={12}>
+                        <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">
                             <a
                               href="https://silly-croissant-4c0c3a.netlify.app/"
@@ -497,9 +493,6 @@ const PortPolfolio = () => {
             </section>
           </main>
         </div>
-        <Title subTitle="Contact Me" title="Get in Touch" />
-
-        <Contact />
       </div>
     </div>
   );

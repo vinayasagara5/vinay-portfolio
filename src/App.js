@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import PortPolfolio from './PortPolfolio';
 import './App.css';
+import Contact from './components/contact/Contact';
+import Title from './components/title/Title';
 
 
 function App() {
@@ -18,15 +20,18 @@ function App() {
       onMouseLeave={() => setIsHovered(false)}
     >
 
-      {isHovered && (
+      {/* {isHovered && (
         <div
           className="shadow"
           style={{
             background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
           }}
         />
-      )}
+      )} */}
       <PortPolfolio />
+              <Title subTitle="Contact Me" title="Get in Touch" />
+
+        <Contact />
     </div>
   );
 }

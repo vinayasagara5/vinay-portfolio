@@ -8,24 +8,22 @@
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
-.resume-wrapper{
+
+.resume-wrapper {
     position: absolute;
-z-index: 1000;
+    z-index: 1000;
     text-align: center;
     letter-spacing: 2px;
     color: var(--primary-color, #fff);
     font-size: 1em;
-    /* right:0; */
     right: 10px;
     top: 15px;
-    /* top: -48px; */
 }
 
 .resume-text {
     text-align: center;
     letter-spacing: 2px;
     color: var(--primary-color, #fff);
-    /* color: var(--primary-color, #000); */
     font-size: 1em;
     position: relative;
     top: -48px;
@@ -92,8 +90,6 @@ z-index: 1000;
 
 .viewResume:hover .rightIcon {
     transform: rotate(320deg);
-    /* width: 15px; */
-    /* height: 15px; */
     margin-left: 8px;
     margin-bottom: 3px;
     color: rgb(94 234 212);
@@ -107,16 +103,6 @@ z-index: 1000;
 }
 
 
-
-
-.userName {
-    font-size: 3rem;
-    line-height: 1;
-    letter-spacing: -.025em;
-    font-weight: 700;
-    opacity: 1;
-    color: rgb(226 232 240)
-}
 
 .designation {
     font-size: 1.25rem;
@@ -133,16 +119,20 @@ z-index: 1000;
     margin-top: 1rem;
 }
 
-/* .headerContent {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-} */
-
 @media (min-width: 1024px) {
     .container {
         opacity: 1;
         max-width: 100%;
 
+    }
+
+    .userName {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: -.025em;
+        font-weight: 700;
+        opacity: 1;
+        color: rgb(226 232 240)
     }
 
     .content {
@@ -156,8 +146,8 @@ z-index: 1000;
     }
 
     .maxScreen {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
     .headerContent {
@@ -166,7 +156,7 @@ z-index: 1000;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 50%;
+        width: 45%;
         max-height: 100vh;
         position: sticky
     }
@@ -178,7 +168,7 @@ z-index: 1000;
     .mainContent {
         padding-top: 6rem;
         padding-bottom: 6rem;
-        width: 50%;
+        width: 58%;
         max-height: calc(100vh - 10px);
         overflow-y: auto;
     }
@@ -196,18 +186,25 @@ z-index: 1000;
     .exp-card:hover .disignation span {
         color: rgb(94 234 212);
     }
-   
+
     .exp-card-icon {
         /* border-width: 2px; */
+        max-width: 100%;
         border-radius: .25rem;
         border-color: rgba(226, 232, 240, .1);
     }
+
     .exp-card-icon:hover {
         border-width: 4px;
         border-radius: .25rem;
         border-color: rgba(226, 232, 240);
         border: 1px solid rgba(226, 232, 240);
     }
+    .section {
+        scroll-margin-top: 6rem;
+        margin-bottom: 9rem;
+    }
+    
 }
 
 @media (max-width: 1024px) {
@@ -215,6 +212,15 @@ z-index: 1000;
         opacity: 1;
         padding: 3rem 1.5rem 3rem 1.5rem;
         max-width: 100%;
+    }
+
+    .userName {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: -.025em;
+        font-weight: 700;
+        opacity: 1;
+        color: rgb(226 232 240)
     }
 
     .navbar {
@@ -263,10 +269,12 @@ z-index: 1000;
     }
 
     .exp-card-icon {
-        /* border-width: 2px; */
+        margin-bottom: 1rem;
         border-radius: .25rem;
         border-color: rgba(226, 232, 240, .1);
+        width: 170px;
     }
+
     .exp-card-icon:hover {
         border-width: 4px;
         border-radius: .25rem;
@@ -278,7 +286,27 @@ z-index: 1000;
     .exp-card:hover .disignation span {
         color: rgb(94 234 212);
     }
+    .section {
+        scroll-margin-top: 6rem;
+        margin-bottom: 9rem;
+    }
+    
+}
 
+@media (min-width: 768px) {
+    .userName {
+        font-size: 2.5rem;
+        line-height: 1;
+        letter-spacing: -.025em;
+        font-weight: 700;
+        opacity: 1;
+        color: rgb(226 232 240)
+    }
+    .section {
+        scroll-margin-top: 6rem;
+        margin-bottom: 9rem;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -289,17 +317,29 @@ z-index: 1000;
 
     }
 
+    .userName {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        line-height: 1;
+        letter-spacing: -.025em;
+        font-weight: 700;
+        opacity: 1;
+        color: rgb(226 232 240)
+    }
+
+    .exp-card-icon {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
     .navbar {
         display: none;
         /* margin-top: 4rem; */
     }
 
     .headerContent {
-        /* padding-top: 6rem; */
-        /* padding-bottom: 6rem; */
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         width: 100%;
         max-height: 100vh;
         position: sticky
@@ -307,17 +347,20 @@ z-index: 1000;
 
     .mainContent {
         padding-top: 6rem;
-        padding-bottom: 6rem;
-        /* width: 50%; */
-        /* max-height: calc(100vh - 10px); */
-        /* overflow-y: auto; */
+        padding-bottom: 1rem;
     }
 
     .heading-xs {
         display: block;
     }
+    .section {
+        scroll-margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    
 
 }
+
 
 .selectTab {
     width: max-content;
@@ -329,15 +372,12 @@ z-index: 1000;
 
 .mainContent {
     padding-top: 6rem;
-    padding-bottom: 6rem;
-    /* width: 50%;
-    max-height: calc(100vh - 10px);
-    overflow-y: auto; */
+    padding-bottom: 1rem;
+
 }
 
 .mainContent::-webkit-scrollbar {
     display: none;
-    /* Hides scrollbar in WebKit-based browsers (Chrome, Safari) */
 }
 
 .aboutContent {
@@ -397,10 +437,6 @@ z-index: 1000;
     margin-right: 1rem
 }
 
-.section {
-    scroll-margin-top: 6rem;
-    margin-bottom: 9rem;
-}
 
 .experienceSection:hover {
     opacity: 0.8;
