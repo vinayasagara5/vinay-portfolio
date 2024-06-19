@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  opacity: 1;
+  background-color: rgb(15 23 42);
+  -webkit-font-smoothing: 'antialiased';
+}
+html {
+  scroll-behavior: smooth;
+}
