@@ -5,8 +5,6 @@
   inset: 0;
 }
 
-
-
 .shape {
   stroke-dasharray: 75 540;
   stroke-dashoffset: -193px;
@@ -17,8 +15,8 @@
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 
-.resume-wrapper:hover .shape, #show-projects:hover .shape {
-  /* stroke-width: 2px; */
+.resume-wrapper:hover .shape,
+#show-projects:hover .shape {
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./PortPolfolio.css";
 import { Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -15,6 +14,7 @@ import Chatapp from "./Assets/Chatapp.png";
 import Contact from "./components/contact/Contact.jsx";
 import Title from "./components/title/Title.jsx";
 
+import "./PortPolfolio.css";
 import resume from "./VinayCVL.pdf";
 import { auto } from "@popperjs/core";
 
@@ -27,7 +27,7 @@ const PortPolfolio = () => {
     if (!mainContent) return;
     const sections = mainContent.querySelectorAll("section");
     const scrollPosition = mainContent.scrollTop;
-    const scrollMarginTop = 6 * 16; // 6rem converted to pixels (assuming 1rem = 16px)
+    const scrollMarginTop = 6 * 16;
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
@@ -350,10 +350,7 @@ const PortPolfolio = () => {
                     <div className="exp-card">
                       <Row>
                         <Col xs={12} md={3}>
-                          <img
-                            src={Academia}
-                            className="exp-card-icon"
-                          />
+                          <img src={Academia} className="exp-card-icon" />
                         </Col>
                         <Col xs={12} md={9} sm={12}>
                           <h3 className="disignation">

@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import PortPolfolio from './PortPolfolio';
-import './App.css';
-import Contact from './components/contact/Contact';
-import Title from './components/title/Title';
-
+import { useState } from "react";
+import PortPolfolio from "./PortPolfolio";
+import "./App.css";
+import Contact from "./components/contact/Contact";
+import Title from "./components/title/Title";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,24 +13,16 @@ function App() {
   };
 
   return (
-    <div className="App"
+    <div
+      className="App"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-
-      {/* {isHovered && (
-        <div
-          className="shadow"
-          style={{
-            background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
-          }}
-        />
-      )} */}
       <PortPolfolio />
-              <Title subTitle="Contact Me" title="Get in Touch" />
+      <Title subTitle="Contact Me" title="Get in Touch" />
 
-        <Contact />
+      <Contact />
     </div>
   );
 }
